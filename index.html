@@ -20,7 +20,7 @@
       height: 100%;
     }
 
-    /* Move AR button to upper-right */
+    /* Move AR button to top-right */
     model-viewer::part(ar-button) {
       bottom: auto;
       top: 10px;
@@ -29,16 +29,16 @@
   </style>
 </head>
 <body>
-<model-viewer 
-    src="model.glb"
-    ios-src="model.usdz"
-    alt="3D Model"
-    ar
-    ar-modes="quick-look"
-    camera-controls
-    auto-rotate
-    autoplay
-    background-color="#FFFFFF">
-</model-viewer>
+  <model-viewer 
+      src="model.glb"          <!-- Android/desktop GLB -->
+      ios-src="model.usdz"     <!-- iOS Quick Look -->
+      alt="3D Model"
+      ar
+      ar-modes="scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      autoplay
+      background-color="#FFFFFF">
+  </model-viewer>
 </body>
 </html>
